@@ -17,8 +17,11 @@ def run():
             page.wait_for_selector(button_selector, timeout=15_000)
             page.click(button_selector)
             print("App era in sleep → risvegliata con successo!")
-        except:
-            print("App già attiva, nessuna azione necessaria.")
+        except Exception as e:
+            if "Timeout" in type(e).__name__:
+                print("App già attiva, nessuna azione necessaria.")
+            else:
+                raise
 
         browser.close()
 
