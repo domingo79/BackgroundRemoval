@@ -91,7 +91,6 @@ else:
     with st.expander("🔒 **Privacy garantita**", expanded=True):
         st.markdown("""
         - ✅ La tua immagine viene elaborata **solo in memoria**, mai salvata su disco
-        - ✅ Nessun dato viene trasmesso a server esterni
         - ✅ Alla chiusura della sessione tutto viene eliminato automaticamente
         - ✅ Puoi verificare il risultato in anteprima prima di scaricare
         """)
